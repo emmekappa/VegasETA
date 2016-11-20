@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H5d-zV-L5h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ETA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ETA" id="BYZ-38-t0r" customClass="ETAViewController" customModule="LasVegasETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,192 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ryY-HH-lmd">
+                                <rect key="frame" x="67" y="259" width="240" height="149"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETA" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu4-f9-uYd">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7v2-h7-87V">
+                                        <rect key="frame" x="0.0" y="21" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ryY-HH-lmd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="195" id="Hjg-EI-nfz"/>
+                            <constraint firstItem="ryY-HH-lmd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Soh-1w-2dK"/>
+                            <constraint firstItem="ryY-HH-lmd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gZ8-RG-xRe"/>
+                            <constraint firstItem="ryY-HH-lmd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mea-T6-mnP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="ETA" id="Gar-9r-sqs">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="VTH-gT-sa2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="etaDateLabel" destination="wu4-f9-uYd" id="PKo-ye-h3p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1537" y="99"/>
+        </scene>
+        <!--ETAs-->
+        <scene sceneID="WdA-h9-z9K">
+            <objects>
+                <tableViewController id="ayF-ER-xy2" customClass="ETATableViewController" customModule="LasVegasETA" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="fGT-WU-7mB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ETATableViewCell" rowHeight="90" id="eRs-cn-Q03" customClass="ETATableViewCell" customModule="LasVegasETA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eRs-cn-Q03" id="Avv-KT-pnf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Uf-YA-Wg5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCo-Cd-nF0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="iqL-Xg-7RS"/>
+                                                        <constraint firstAttribute="width" constant="60" id="loO-dW-Jxq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vIz-20-doV">
+                                                    <rect key="frame" x="60" y="0.0" width="315" height="90"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETA name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUz-7i-Nt5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="vjh-XC-5Ov"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-2 years, 4 months, 0 weeks, 5 days, 0 hours, 0 minutes, 0 seconds" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wN-On-E0q">
+                                                            <rect key="frame" x="0.0" y="30" width="315" height="60"/>
+                                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="9Uf-YA-Wg5" secondAttribute="trailing" id="7zk-LI-Xso"/>
+                                        <constraint firstItem="9Uf-YA-Wg5" firstAttribute="top" secondItem="Avv-KT-pnf" secondAttribute="top" id="FdA-M1-1mq"/>
+                                        <constraint firstItem="9Uf-YA-Wg5" firstAttribute="centerY" secondItem="Avv-KT-pnf" secondAttribute="centerY" id="ewC-3i-Icy"/>
+                                        <constraint firstItem="9Uf-YA-Wg5" firstAttribute="leading" secondItem="Avv-KT-pnf" secondAttribute="leading" id="lGb-VP-MTU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="etaNameLabel" destination="VUz-7i-Nt5" id="cCS-g2-xol"/>
+                                    <outlet property="etaTimeLabel" destination="3wN-On-E0q" id="srd-FQ-SdY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ayF-ER-xy2" id="iXP-AU-Cnl"/>
+                            <outlet property="delegate" destination="ayF-ER-xy2" id="PvG-eJ-VhW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ETAs" id="ubS-eE-qmX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="neV-T8-B9l"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="eHt-f5-qaS">
+                            <connections>
+                                <segue destination="eAG-A7-rB0" kind="show" id="EDO-zt-Jrk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeT-MB-fjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="994"/>
+        </scene>
+        <!--Choose your target-->
+        <scene sceneID="YZA-HW-mIb">
+            <objects>
+                <viewController id="eAG-A7-rB0" customClass="ChooseTargetViewController" customModule="LasVegasETA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eVV-y5-JGr"/>
+                        <viewControllerLayoutGuide type="bottom" id="c9n-qt-7Yh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qAo-t5-0x2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AEY-Bv-Xbh">
+                                <rect key="frame" x="27" y="225" width="320" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ETA name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNp-nu-cTS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xam-gj-G1e">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="501340127.24442798">
+                                            <!--2016-11-20 13:08:47 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose your target" id="OjE-NV-dDm">
+                        <barButtonItem key="backBarButtonItem" title="Edit" id="wPD-2m-Mze"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sbn-F4-xY5">
+                            <connections>
+                                <segue destination="wPa-rK-wTm" kind="unwind" identifier="saveETA" unwindAction="unwindToETAListWithSegue:" id="upZ-hP-3da"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="etaNameLabel" destination="xNp-nu-cTS" id="WPQ-S1-5LG"/>
+                        <outlet property="etaPicker" destination="xam-gj-G1e" id="VxY-8K-xLe"/>
+                        <outlet property="saveETA" destination="Sbn-F4-xY5" id="OTf-Zq-Qhi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1K-tq-VcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wPa-rK-wTm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2841" y="994"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dUo-Kl-I6e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H5d-zV-L5h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="60f-PF-lJT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ayF-ER-xy2" kind="relationship" relationship="rootViewController" id="yLS-Fl-lrW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fr-Sd-2Wp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152.8" y="993.55322338830592"/>
         </scene>
     </scenes>
 </document>

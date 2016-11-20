@@ -14,6 +14,14 @@
 		AC5D1BE71DE1D2F500A1AED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5D1BE51DE1D2F500A1AED1 /* LaunchScreen.storyboard */; };
 		AC5D1BF21DE1D2F500A1AED1 /* LasVegasETATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1BF11DE1D2F500A1AED1 /* LasVegasETATests.swift */; };
 		AC5D1BFD1DE1D2F500A1AED1 /* LasVegasETAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1BFC1DE1D2F500A1AED1 /* LasVegasETAUITests.swift */; };
+		AC5D1C0A1DE1D4C700A1AED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5D1BE01DE1D2F500A1AED1 /* Main.storyboard */; };
+		AC5D1C0C1DE1DBA300A1AED1 /* ChooseTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1C0B1DE1DBA300A1AED1 /* ChooseTargetViewController.swift */; };
+		AC5D1C101DE1DC0400A1AED1 /* ETAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1C0F1DE1DC0400A1AED1 /* ETAViewController.swift */; };
+		AC5D1C121DE1EA5F00A1AED1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1C111DE1EA5F00A1AED1 /* NavigationController.swift */; };
+		AC5D1C151DE1EDFE00A1AED1 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5D1C141DE1EDFE00A1AED1 /* SwiftDate.framework */; };
+		AC5D1C181DE1F55700A1AED1 /* ETATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1C171DE1F55700A1AED1 /* ETATableViewCell.swift */; };
+		AC5D1C1A1DE1F6CA00A1AED1 /* ETATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1C191DE1F6CA00A1AED1 /* ETATableViewController.swift */; };
+		AC5D1C1C1DE1F6F100A1AED1 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D1C1B1DE1F6F100A1AED1 /* ETA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,13 @@
 		AC5D1BF81DE1D2F500A1AED1 /* LasVegasETAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LasVegasETAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5D1BFC1DE1D2F500A1AED1 /* LasVegasETAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LasVegasETAUITests.swift; sourceTree = "<group>"; };
 		AC5D1BFE1DE1D2F500A1AED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5D1C0B1DE1DBA300A1AED1 /* ChooseTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTargetViewController.swift; sourceTree = "<group>"; };
+		AC5D1C0F1DE1DC0400A1AED1 /* ETAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAViewController.swift; sourceTree = "<group>"; };
+		AC5D1C111DE1EA5F00A1AED1 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		AC5D1C141DE1EDFE00A1AED1 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		AC5D1C171DE1F55700A1AED1 /* ETATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETATableViewCell.swift; sourceTree = "<group>"; };
+		AC5D1C191DE1F6CA00A1AED1 /* ETATableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETATableViewController.swift; sourceTree = "<group>"; };
+		AC5D1C1B1DE1F6F100A1AED1 /* ETA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5D1C151DE1EDFE00A1AED1 /* SwiftDate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,7 @@
 				AC5D1BF01DE1D2F500A1AED1 /* LasVegasETATests */,
 				AC5D1BFB1DE1D2F500A1AED1 /* LasVegasETAUITests */,
 				AC5D1BDA1DE1D2F500A1AED1 /* Products */,
+				AC5D1C131DE1EDFE00A1AED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +120,12 @@
 				AC5D1BE31DE1D2F500A1AED1 /* Assets.xcassets */,
 				AC5D1BE51DE1D2F500A1AED1 /* LaunchScreen.storyboard */,
 				AC5D1BE81DE1D2F500A1AED1 /* Info.plist */,
+				AC5D1C0B1DE1DBA300A1AED1 /* ChooseTargetViewController.swift */,
+				AC5D1C0F1DE1DC0400A1AED1 /* ETAViewController.swift */,
+				AC5D1C111DE1EA5F00A1AED1 /* NavigationController.swift */,
+				AC5D1C171DE1F55700A1AED1 /* ETATableViewCell.swift */,
+				AC5D1C191DE1F6CA00A1AED1 /* ETATableViewController.swift */,
+				AC5D1C1B1DE1F6F100A1AED1 /* ETA.swift */,
 			);
 			path = LasVegasETA;
 			sourceTree = "<group>";
@@ -125,6 +148,14 @@
 			path = LasVegasETAUITests;
 			sourceTree = "<group>";
 		};
+		AC5D1C131DE1EDFE00A1AED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D1C141DE1EDFE00A1AED1 /* SwiftDate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +166,7 @@
 				AC5D1BD51DE1D2F400A1AED1 /* Sources */,
 				AC5D1BD61DE1D2F400A1AED1 /* Frameworks */,
 				AC5D1BD71DE1D2F400A1AED1 /* Resources */,
+				AC5D1C161DE1EE1200A1AED1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5D1C0A1DE1D4C700A1AED1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +287,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC5D1C161DE1EE1200A1AED1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC5D1BD51DE1D2F400A1AED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AC5D1BDF1DE1D2F500A1AED1 /* ViewController.swift in Sources */,
+				AC5D1C0C1DE1DBA300A1AED1 /* ChooseTargetViewController.swift in Sources */,
+				AC5D1C1A1DE1F6CA00A1AED1 /* ETATableViewController.swift in Sources */,
+				AC5D1C181DE1F55700A1AED1 /* ETATableViewCell.swift in Sources */,
+				AC5D1C121DE1EA5F00A1AED1 /* NavigationController.swift in Sources */,
 				AC5D1BDD1DE1D2F500A1AED1 /* AppDelegate.swift in Sources */,
+				AC5D1C1C1DE1F6F100A1AED1 /* ETA.swift in Sources */,
+				AC5D1C101DE1DC0400A1AED1 /* ETAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LasVegasETA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emme.LasVegasETA;
@@ -424,6 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LasVegasETA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emme.LasVegasETA;
