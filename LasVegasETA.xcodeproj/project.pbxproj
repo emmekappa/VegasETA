@@ -225,6 +225,7 @@
 				TargetAttributes = {
 					AC5D1BD81DE1D2F400A1AED1 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4Q4LZKT744;
 						ProvisioningStyle = Automatic;
 					};
 					AC5D1BEC1DE1D2F500A1AED1 = {
@@ -468,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -484,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -569,6 +572,7 @@
 				AC5D1C031DE1D2F500A1AED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC5D1C041DE1D2F500A1AED1 /* Build configuration list for PBXNativeTarget "LasVegasETATests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +581,7 @@
 				AC5D1C061DE1D2F500A1AED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC5D1C071DE1D2F500A1AED1 /* Build configuration list for PBXNativeTarget "LasVegasETAUITests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +590,7 @@
 				AC5D1C091DE1D2F500A1AED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
