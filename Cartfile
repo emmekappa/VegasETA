@@ -1,1 +1,2 @@
-github "malcommac/SwiftDate" ~> 4.0
+github "akosma/SwiftMoment" ~> 0.7
+github "mattt/FormatterKit" ~> 1.8.2
