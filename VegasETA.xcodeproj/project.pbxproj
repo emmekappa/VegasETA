@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC1713421ED1D6CA00012313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713411ED1D6CA00012313 /* AppDelegate.swift */; };
+		AC1713441ED1D6CA00012313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713431ED1D6CA00012313 /* ViewController.swift */; };
+		AC1713491ED1D6CA00012313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1713481ED1D6CA00012313 /* Assets.xcassets */; };
+		AC17134C1ED1D6CA00012313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17134A1ED1D6CA00012313 /* LaunchScreen.storyboard */; };
+		AC1713511ED1D6CA00012313 /* VegasETA WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC1713501ED1D6CA00012313 /* VegasETA WatchKit App.app */; };
+		AC1713571ED1D6CA00012313 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1713551ED1D6CA00012313 /* Interface.storyboard */; };
+		AC1713591ED1D6CA00012313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1713581ED1D6CA00012313 /* Assets.xcassets */; };
+		AC1713601ED1D6CA00012313 /* VegasETA WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC17135F1ED1D6CA00012313 /* VegasETA WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC1713671ED1D6CA00012313 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713661ED1D6CA00012313 /* InterfaceController.swift */; };
+		AC1713691ED1D6CA00012313 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713681ED1D6CA00012313 /* ExtensionDelegate.swift */; };
+		AC17136B1ED1D6CA00012313 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17136A1ED1D6CA00012313 /* NotificationController.swift */; };
+		AC17136D1ED1D6CA00012313 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17136C1ED1D6CA00012313 /* ComplicationController.swift */; };
+		AC17136F1ED1D6CA00012313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC17136E1ED1D6CA00012313 /* Assets.xcassets */; };
+		AC1713851ED1D70A00012313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17137E1ED1D70A00012313 /* Main.storyboard */; };
+		AC1713861ED1D70A00012313 /* ChooseTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17137F1ED1D70A00012313 /* ChooseTargetViewController.swift */; };
+		AC1713871ED1D70A00012313 /* ETAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713801ED1D70A00012313 /* ETAViewController.swift */; };
+		AC1713881ED1D70A00012313 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713811ED1D70A00012313 /* NavigationController.swift */; };
+		AC1713891ED1D70A00012313 /* ETATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713821ED1D70A00012313 /* ETATableViewCell.swift */; };
+		AC17138A1ED1D70A00012313 /* ETATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713831ED1D70A00012313 /* ETATableViewController.swift */; };
+		AC17138B1ED1D70A00012313 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1713841ED1D70A00012313 /* ETA.swift */; };
+		ACAF17EF1ED1D8C50038F601 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAF17ED1ED1D8C50038F601 /* SwiftMoment.framework */; };
+		ACAF17F01ED1D8C50038F601 /* FormatterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAF17EE1ED1D8C50038F601 /* FormatterKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC1713521ED1D6CA00012313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC1713361ED1D6CA00012313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC17134F1ED1D6CA00012313;
+			remoteInfo = "VegasETA WatchKit App";
+		};
+		AC1713611ED1D6CA00012313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC1713361ED1D6CA00012313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC17135E1ED1D6CA00012313;
+			remoteInfo = "VegasETA WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC1713761ED1D6CA00012313 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC1713601ED1D6CA00012313 /* VegasETA WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC17137A1ED1D6CA00012313 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC1713511ED1D6CA00012313 /* VegasETA WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC17133E1ED1D6CA00012313 /* VegasETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegasETA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1713411ED1D6CA00012313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC1713431ED1D6CA00012313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC1713481ED1D6CA00012313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC17134B1ED1D6CA00012313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC17134D1ED1D6CA00012313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1713501ED1D6CA00012313 /* VegasETA WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VegasETA WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1713561ED1D6CA00012313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AC1713581ED1D6CA00012313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC17135A1ED1D6CA00012313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC17135F1ED1D6CA00012313 /* VegasETA WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VegasETA WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1713651ED1D6CA00012313 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AC1713661ED1D6CA00012313 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AC1713681ED1D6CA00012313 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AC17136A1ED1D6CA00012313 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AC17136C1ED1D6CA00012313 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AC17136E1ED1D6CA00012313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC1713701ED1D6CA00012313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC17137E1ED1D70A00012313 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC17137F1ED1D70A00012313 /* ChooseTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTargetViewController.swift; sourceTree = "<group>"; };
+		AC1713801ED1D70A00012313 /* ETAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAViewController.swift; sourceTree = "<group>"; };
+		AC1713811ED1D70A00012313 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		AC1713821ED1D70A00012313 /* ETATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETATableViewCell.swift; sourceTree = "<group>"; };
+		AC1713831ED1D70A00012313 /* ETATableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETATableViewController.swift; sourceTree = "<group>"; };
+		AC1713841ED1D70A00012313 /* ETA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETA.swift; sourceTree = "<group>"; };
+		ACAF17ED1ED1D8C50038F601 /* SwiftMoment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMoment.framework; path = Carthage/Build/iOS/SwiftMoment.framework; sourceTree = "<group>"; };
+		ACAF17EE1ED1D8C50038F601 /* FormatterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormatterKit.framework; path = Carthage/Build/iOS/FormatterKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC17133B1ED1D6CA00012313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACAF17EF1ED1D8C50038F601 /* SwiftMoment.framework in Frameworks */,
+				ACAF17F01ED1D8C50038F601 /* FormatterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC17135C1ED1D6CA00012313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC1713351ED1D6CA00012313 = {
+			isa = PBXGroup;
+			children = (
+				AC1713401ED1D6CA00012313 /* VegasETA */,
+				AC1713541ED1D6CA00012313 /* VegasETA WatchKit App */,
+				AC1713631ED1D6CA00012313 /* VegasETA WatchKit Extension */,
+				AC17133F1ED1D6CA00012313 /* Products */,
+				AC17138D1ED1D7CE00012313 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC17133F1ED1D6CA00012313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC17133E1ED1D6CA00012313 /* VegasETA.app */,
+				AC1713501ED1D6CA00012313 /* VegasETA WatchKit App.app */,
+				AC17135F1ED1D6CA00012313 /* VegasETA WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC1713401ED1D6CA00012313 /* VegasETA */ = {
+			isa = PBXGroup;
+			children = (
+				AC17137E1ED1D70A00012313 /* Main.storyboard */,
+				AC17137F1ED1D70A00012313 /* ChooseTargetViewController.swift */,
+				AC1713801ED1D70A00012313 /* ETAViewController.swift */,
+				AC1713811ED1D70A00012313 /* NavigationController.swift */,
+				AC1713821ED1D70A00012313 /* ETATableViewCell.swift */,
+				AC1713831ED1D70A00012313 /* ETATableViewController.swift */,
+				AC1713841ED1D70A00012313 /* ETA.swift */,
+				AC1713411ED1D6CA00012313 /* AppDelegate.swift */,
+				AC1713431ED1D6CA00012313 /* ViewController.swift */,
+				AC1713481ED1D6CA00012313 /* Assets.xcassets */,
+				AC17134A1ED1D6CA00012313 /* LaunchScreen.storyboard */,
+				AC17134D1ED1D6CA00012313 /* Info.plist */,
+			);
+			path = VegasETA;
+			sourceTree = "<group>";
+		};
+		AC1713541ED1D6CA00012313 /* VegasETA WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AC1713551ED1D6CA00012313 /* Interface.storyboard */,
+				AC1713581ED1D6CA00012313 /* Assets.xcassets */,
+				AC17135A1ED1D6CA00012313 /* Info.plist */,
+			);
+			path = "VegasETA WatchKit App";
+			sourceTree = "<group>";
+		};
+		AC1713631ED1D6CA00012313 /* VegasETA WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC1713661ED1D6CA00012313 /* InterfaceController.swift */,
+				AC1713681ED1D6CA00012313 /* ExtensionDelegate.swift */,
+				AC17136A1ED1D6CA00012313 /* NotificationController.swift */,
+				AC17136C1ED1D6CA00012313 /* ComplicationController.swift */,
+				AC17136E1ED1D6CA00012313 /* Assets.xcassets */,
+				AC1713701ED1D6CA00012313 /* Info.plist */,
+				AC1713641ED1D6CA00012313 /* Supporting Files */,
+			);
+			path = "VegasETA WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AC1713641ED1D6CA00012313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC1713651ED1D6CA00012313 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC17138D1ED1D7CE00012313 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACAF17ED1ED1D8C50038F601 /* SwiftMoment.framework */,
+				ACAF17EE1ED1D8C50038F601 /* FormatterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC17133D1ED1D6CA00012313 /* VegasETA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC17137B1ED1D6CA00012313 /* Build configuration list for PBXNativeTarget "VegasETA" */;
+			buildPhases = (
+				AC17133A1ED1D6CA00012313 /* Sources */,
+				AC17133B1ED1D6CA00012313 /* Frameworks */,
+				AC17133C1ED1D6CA00012313 /* Resources */,
+				AC17137A1ED1D6CA00012313 /* Embed Watch Content */,
+				ACAF17F11ED1D9040038F601 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC1713531ED1D6CA00012313 /* PBXTargetDependency */,
+			);
+			name = VegasETA;
+			productName = VegasETA;
+			productReference = AC17133E1ED1D6CA00012313 /* VegasETA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC17134F1ED1D6CA00012313 /* VegasETA WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1713771ED1D6CA00012313 /* Build configuration list for PBXNativeTarget "VegasETA WatchKit App" */;
+			buildPhases = (
+				AC17134E1ED1D6CA00012313 /* Resources */,
+				AC1713761ED1D6CA00012313 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC1713621ED1D6CA00012313 /* PBXTargetDependency */,
+			);
+			name = "VegasETA WatchKit App";
+			productName = "VegasETA WatchKit App";
+			productReference = AC1713501ED1D6CA00012313 /* VegasETA WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AC17135E1ED1D6CA00012313 /* VegasETA WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1713731ED1D6CA00012313 /* Build configuration list for PBXNativeTarget "VegasETA WatchKit Extension" */;
+			buildPhases = (
+				AC17135B1ED1D6CA00012313 /* Sources */,
+				AC17135C1ED1D6CA00012313 /* Frameworks */,
+				AC17135D1ED1D6CA00012313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VegasETA WatchKit Extension";
+			productName = "VegasETA WatchKit Extension";
+			productReference = AC17135F1ED1D6CA00012313 /* VegasETA WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC1713361ED1D6CA00012313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Michele Cantelli";
+				TargetAttributes = {
+					AC17133D1ED1D6CA00012313 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4Q4LZKT744;
+						ProvisioningStyle = Automatic;
+					};
+					AC17134F1ED1D6CA00012313 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4Q4LZKT744;
+						ProvisioningStyle = Automatic;
+					};
+					AC17135E1ED1D6CA00012313 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4Q4LZKT744;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC1713391ED1D6CA00012313 /* Build configuration list for PBXProject "VegasETA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC1713351ED1D6CA00012313;
+			productRefGroup = AC17133F1ED1D6CA00012313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC17133D1ED1D6CA00012313 /* VegasETA */,
+				AC17134F1ED1D6CA00012313 /* VegasETA WatchKit App */,
+				AC17135E1ED1D6CA00012313 /* VegasETA WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC17133C1ED1D6CA00012313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC17134C1ED1D6CA00012313 /* LaunchScreen.storyboard in Resources */,
+				AC1713491ED1D6CA00012313 /* Assets.xcassets in Resources */,
+				AC1713851ED1D70A00012313 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC17134E1ED1D6CA00012313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1713591ED1D6CA00012313 /* Assets.xcassets in Resources */,
+				AC1713571ED1D6CA00012313 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC17135D1ED1D6CA00012313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC17136F1ED1D6CA00012313 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACAF17F11ED1D9040038F601 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftMoment.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FormatterKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC17133A1ED1D6CA00012313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1713441ED1D6CA00012313 /* ViewController.swift in Sources */,
+				AC1713861ED1D70A00012313 /* ChooseTargetViewController.swift in Sources */,
+				AC17138A1ED1D70A00012313 /* ETATableViewController.swift in Sources */,
+				AC1713891ED1D70A00012313 /* ETATableViewCell.swift in Sources */,
+				AC1713881ED1D70A00012313 /* NavigationController.swift in Sources */,
+				AC1713421ED1D6CA00012313 /* AppDelegate.swift in Sources */,
+				AC17138B1ED1D70A00012313 /* ETA.swift in Sources */,
+				AC1713871ED1D70A00012313 /* ETAViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC17135B1ED1D6CA00012313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC17136B1ED1D6CA00012313 /* NotificationController.swift in Sources */,
+				AC17136D1ED1D6CA00012313 /* ComplicationController.swift in Sources */,
+				AC1713691ED1D6CA00012313 /* ExtensionDelegate.swift in Sources */,
+				AC1713671ED1D6CA00012313 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC1713531ED1D6CA00012313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC17134F1ED1D6CA00012313 /* VegasETA WatchKit App */;
+			targetProxy = AC1713521ED1D6CA00012313 /* PBXContainerItemProxy */;
+		};
+		AC1713621ED1D6CA00012313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC17135E1ED1D6CA00012313 /* VegasETA WatchKit Extension */;
+			targetProxy = AC1713611ED1D6CA00012313 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC17134A1ED1D6CA00012313 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC17134B1ED1D6CA00012313 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AC1713551ED1D6CA00012313 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC1713561ED1D6CA00012313 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC1713711ED1D6CA00012313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC1713721ED1D6CA00012313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC1713741ED1D6CA00012313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
+				INFOPLIST_FILE = "VegasETA WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmekappa.VegasETA.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		AC1713751ED1D6CA00012313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
+				INFOPLIST_FILE = "VegasETA WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmekappa.VegasETA.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		AC1713781ED1D6CA00012313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
+				IBSC_MODULE = VegasETA_WatchKit_Extension;
+				INFOPLIST_FILE = "VegasETA WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmekappa.VegasETA.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		AC1713791ED1D6CA00012313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
+				IBSC_MODULE = VegasETA_WatchKit_Extension;
+				INFOPLIST_FILE = "VegasETA WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmekappa.VegasETA.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		AC17137C1ED1D6CA00012313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VegasETA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmekappa.VegasETA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC17137D1ED1D6CA00012313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q4LZKT744;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VegasETA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmekappa.VegasETA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC1713391ED1D6CA00012313 /* Build configuration list for PBXProject "VegasETA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1713711ED1D6CA00012313 /* Debug */,
+				AC1713721ED1D6CA00012313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC1713731ED1D6CA00012313 /* Build configuration list for PBXNativeTarget "VegasETA WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1713741ED1D6CA00012313 /* Debug */,
+				AC1713751ED1D6CA00012313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC1713771ED1D6CA00012313 /* Build configuration list for PBXNativeTarget "VegasETA WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1713781ED1D6CA00012313 /* Debug */,
+				AC1713791ED1D6CA00012313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC17137B1ED1D6CA00012313 /* Build configuration list for PBXNativeTarget "VegasETA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC17137C1ED1D6CA00012313 /* Debug */,
+				AC17137D1ED1D6CA00012313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC1713361ED1D6CA00012313 /* Project object */;
+}
