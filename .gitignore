@@ -1,7 +1,7 @@
 
-# Created by https://www.gitignore.io/api/xcode,appcode,carthage
+# Created by https://www.gitignore.io/api/swift
 
-### Xcode ###
+### Swift ###
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -26,61 +26,53 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
 
-### AppCode ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
 
-# User-specific stuff:
-.idea/workspace.xml
-.idea/tasks.xml
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
 
-# Sensitive or high-churn files:
-.idea/dataSources/
-.idea/dataSources.ids
-.idea/dataSources.xml
-.idea/dataSources.local.xml
-.idea/sqlDataSources.xml
-.idea/dynamic.xml
-.idea/uiDesigner.xml
+# CocoaPods - Refactored to standalone file
 
-# Gradle:
-.idea/gradle.xml
-.idea/libraries
+# Carthage - Refactored to standalone file
 
-# Mongo Explorer plugin:
-.idea/mongoSettings.xml
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
 
-## File-based project format:
-*.iws
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
 
-## Plugin-specific files:
+### Swift.CocoaPods Stack ###
+## CocoaPods GitIgnore Template
 
-# IntelliJ
-/out/
+# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
+#           - Also handy if you have a lage number of dependant pods
+#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGONRE THE LOCK FILE
+Pods/
 
-# mpeltonen/sbt-idea plugin
-.idea_modules/
+### Swift.Carthage Stack ###
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
 
-# JIRA plugin
-atlassian-ide-plugin.xml
+Carthage/Build
 
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-### AppCode Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
-
-# *.iml
-# modules.xml
-# .idea/misc.xml 
-# *.ipr
-
-
-### Carthage ###
-# Carthage - A simple, decentralized dependency manager for Cocoa
-Carthage/Checkouts/
-Carthage/Build/
+# End of https://www.gitignore.io/api/swift
