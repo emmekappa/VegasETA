@@ -21,19 +21,51 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler(nil)
     }
     
-    func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(NSDate(timeIntervalSinceNow: (60*60*24)))
+    func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
+        handler(NSDate(timeIntervalSinceNow: (60 * 60 * 24)))
     }
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
         handler(.showOnLockScreen)
     }
     
+    func getNextRequestedUpdateDate(handler: @escaping (Date?) -> Void) {
+        handler(Date(timeIntervalSinceNow: TimeInterval(10*60)))
+    }
+    
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        switch complication.family {
+            
+        case .modularSmall:
+            let template = CLKComplicationTemplateModularSmallRingText()
+            template.textProvider = CLKSimpleTextProvider(text: "real")
+            template.fillFraction = self.dayFraction
+            handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template))
+            
+        case .utilitarianSmall:
+            let template = CLKComplicationTemplateUtilitarianSmallRingText()
+            template.textProvider = CLKSimpleTextProvider(text: "real")
+            template.fillFraction = self.dayFraction
+            handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template))
+            
+        default:
+            NSLog("%@", "Unknown complication type: \(complication.family)")
+            handler(nil)
+        }
+    }
+    
+    var dayFraction : Float {
+        let now = Date()
+        let calendar = Calendar.current
+        let componentFlags = Set<Calendar.Component>([.year, .month, .day, .weekOfYear,     .hour, .minute, .second, .weekday, .weekdayOrdinal])
+        var components = calendar.dateComponents(componentFlags, from: now)
+        components.hour = 0
+        components.minute = 0
+        components.second = 0
+        let startOfDay = calendar.date(from: components)!
+        return Float(now.timeIntervalSince(startOfDay)) / Float(24*60*60)
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -49,26 +81,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Placeholder Templates
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        //handler(nil)
-        var entries: [CLKComplicationTimelineEntry] = []
-        
-        for show in shows
-        {
-            if entries.count < limit && show.startDate.timeIntervalSinceDate(date) > 0
-            {
-                let template = CLKComplicationTemplateModularLargeStandardBody()
-                
-                template.headerTextProvider = CLKTimeIntervalTextProvider(startDate: show.startDate, endDate: NSDate(timeInterval: show.length, sinceDate: show.startDate))
-                template.body1TextProvider = CLKSimpleTextProvider(text: show.name, shortText: show.shortName)
-                template.body2TextProvider = CLKSimpleTextProvider(text: show.genre, shortText: nil)
-                
-                let entry = CLKComplicationTimelineEntry(date: NSDate(timeInterval: hour * -0.25, sinceDate: show.startDate), complicationTemplate: template)
-                entries.append(entry)
-            }
+        if complication.family == .utilitarianSmall {
+            let template = CLKComplicationTemplateUtilitarianSmallRingText()
+            template.textProvider = CLKSimpleTextProvider(text: "HI")
+            template.fillFraction = self.dayFraction
+            handler(template)
+        } else {
+            handler(nil)
         }
-        
-        handler(entries)
     }
     
 }
